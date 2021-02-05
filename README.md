@@ -1,15 +1,39 @@
 # readme_generator
-## Description
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Description
+An application to take user input from Terminal to automatically generate a README file by using node.js and javascript
+### User story
+```md
 AS A developer I WANT a README generator SO THAT can quickly create a professional README for a new project
+```
+## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)  
 
 ## Installation
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running
+- This application need node.js, please refer to [offical website](https://nodejs.org/en/download/) for installation
+- download this repo by running
+```bash
+git clone https://github.com/angelinama/readme_generator.git
+```
+- install required node pacakges by running
+```bash
+npm install
+```
+- run the application by running
+```
+node index
+```
 
 ## Usage
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-`![alt text](assets/images/screenshot.png)`
+A Walkthrough Video is here:
+`[walkthrough](https://drive.google.com/file/d/1TU7C-7X4ADP8nRadzd0VuSuDy2E7GwAW/view?usp=sharing)`
 
 ```md
 GIVEN a command-line application that accepts user input
@@ -29,13 +53,13 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## Credits
-List your collaborators, if any, with links to their GitHub profiles.
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-If you followed tutorials, include links to those here as well
-
 ## License
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use https://choosealicense.com/
-
-mit gnu license
-pick another three licneses
+this project is s licensed under the [MIT License](LICENSE) 
+## Contributing
+This project is not open for collaboration yet   
+## Tests
+Terminal run this application  
+## Questions
+connect with me on [my Github](https://github.com/angelinama) and if you have additional questions, please email me at: angelina890308@gmail.com
+## Credits
+[Angelina Ma](https://github.com/angelinama)
