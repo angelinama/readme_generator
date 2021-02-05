@@ -33,7 +33,7 @@ node index
 
 ## Usage
 A Walkthrough Video is here:
-`[walkthrough](https://drive.google.com/file/d/1TU7C-7X4ADP8nRadzd0VuSuDy2E7GwAW/view?usp=sharing)`
+[![1612513431813](https://user-images.githubusercontent.com/22566791/107008742-fb847400-6748-11eb-81af-b4858f57286b.jpg)](https://drive.google.com/file/d/1TU7C-7X4ADP8nRadzd0VuSuDy2E7GwAW/view?usp=sharing)
 
 ```md
 GIVEN a command-line application that accepts user input
