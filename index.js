@@ -1,48 +1,78 @@
+// TODO: Include packages needed for this application
+const { listenerCount } = require('events');
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-// const questions = [
-//     //    What is your name
-//       {
-//         type: "input",
-//         name: "yourName",
-//         message: "What is your name?"
-//       },
-//     //    What is your location
-//       {
-//         type: "input",
-//         name: "location",
-//         message: "What is your location?"
-//       },
-//     //    Tell us about yourself
-//       {
-//         type: "input",
-//         name: "bio",
-//         message: "Tell us about yourself"
-//       },
-//     //    LinkedIn URL
-//       {
-//         type: "input",
-//         name: "linkedIn",
-//         message: "Please enter your LinkedIn URL"
-//       },
-//     //    Github URL
-//       {
-//         type: "input",
-//         name: "gitHub",
-//         message: "Please enter your gitHub URL"
-//       },
-//     ]
-    
-//     const writeHTML = (userResponses) => {
-//         // put user info into html code
-//         // filename
-//         // content
-//         const content = renderAtTemplate("template.html", userResponses);
-//         console.log(content);
-//         // write the html code into a file called index.html
-//         // we can use fs.writeFileSync here
-//         fs.writeFileSync("index.html", content, "utf8");
-      
-//       }
+// TODO: Create an array of questions for user input
+const questions = [
+    {
+        type: "input",
+        name: "title",
+        message: "What is your project title?"
+    },
+    {
+        type: "input",
+        name: "Description",
+        message: "description of your project(explaining the what, why, and how. )"
+    },
+    {
+        type: "input",
+        name: "Installation",
+        message: "installation instructions"
+    },
+    {
+        type: "input",
+        name: "Usage",
+        message: "Usage of your application"
+    },
+    {
+        type: "input",
+        name: "Contributing",
+        message: "provide your add guidelines for how to do collab on this project"
+    },
+    {
+        type: "input",
+        name: "Tests",
+        message: "tests for your application and how to run them"
+    },
+    {
+        type: "input",
+        name: "gitName",
+        message: "provide your git username"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "provide your email for any question"
+    },
+    {   
+        type: "list",
+        name: "license",
+        choices: ["mit", "gnu"],
+        message: "choose a license"      
+    },
+]
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, JSON.stringify(data), (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+      });
+}
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer
+    .prompt(questions)
+    .then(userResponse => {
+        writeToFile("TEST.md", userResponse);
+    })
+    .catch(err => {
+    console.error(err);
+    });
+}
+
+// Function call to initialize app
+init();
           
