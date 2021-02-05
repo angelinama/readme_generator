@@ -49,7 +49,7 @@ const questions = [
   {   
     type: "list",
     name: "license",
-    choices: ["mit", "gnu"],
+    choices: [null,"Apache License 2.0", "GNU General Public License v3.0", "MIT License"],
   	message: "choose a license"      
   },
 ]
@@ -67,7 +67,7 @@ function init() {
   inquirer
   .prompt(questions)
   .then(userResponse => {
-    writeToFile("TEST.md", userResponse);
+    writeToFile("README.md", userResponse);
   })
   .catch(err => {
   console.error(err);
